@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/csymbol"
+        android:textColor="@color/title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:id="@+id/cname"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/csymbol"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:id="@+id/cprice"
+        android:textSize="19dp"
+        android:textColor="@color/year"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_width="70dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/csymbol"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/csymbol"
+        app:layout_constraintRight_toLeftOf="@+id/cchange"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:textSize="19dp"
+        android:id="@+id/cchange"
+        android:textColor="@color/year"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_width="160dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cprice"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.390625"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="150dp" />
+
+</android.support.constraint.ConstraintLayout>
